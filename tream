@@ -1,0 +1,29 @@
+[33mcommit 8395d4da8d9561c5619a4b01469f6bcc8aec1c4f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Naïm Gómez <33960177+ngomezcn@users.noreply.github.com>
+Date:   Sun Oct 10 01:13:27 2021 +0200
+
+    Delete Sanity.vcxproj
+
+[33mcommit 86e69b0c43b326dccd39a0ff2e6fa4e0b2bfb341[m
+Author: Naïm Gómez <33960177+ngomezcn@users.noreply.github.com>
+Date:   Sun Oct 10 01:13:22 2021 +0200
+
+    Delete Sanity.vcxproj.filters
+
+[33mcommit 6974548b74a4676289a80cef3ed4714cdc352419[m
+Author: Naïm Gómez <33960177+ngomezcn@users.noreply.github.com>
+Date:   Sun Oct 10 01:13:17 2021 +0200
+
+    Delete Sanity.cpp
+
+[33mcommit cacef4ba44132583edaec68d2d97d61ba947d148[m
+Author: ngomez <naimgomezcn@gmail.com>
+Date:   Sun Oct 10 01:10:27 2021 +0200
+
+    Refactor MLP
+
+[33mcommit 7178e71829f670dafa21e176685586b74c1754ac[m
+Author: Naïm Gómez <33960177+ngomezcn@users.noreply.github.com>
+Date:   Sun Oct 10 01:10:38 2021 +0200
+
+    Initial commit
