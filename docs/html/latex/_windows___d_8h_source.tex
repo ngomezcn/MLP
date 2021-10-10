@@ -1,0 +1,40 @@
+\hypertarget{_windows___d_8h_source}{}\doxysection{Windows\+\_\+\+D.\+h}
+\mbox{\hyperlink{_windows___d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#ifdef \_WIN32}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <Windows.h>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <Windows.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <TlHelp32.h>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <tchar.h>}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#ifdef linux}}
+\DoxyCodeLine{28 \textcolor{comment}{// No support}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemlp}{mlp}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33     \textcolor{keyword}{namespace }debug}
+\DoxyCodeLine{34     \{}
+\DoxyCodeLine{45         \textcolor{keyword}{class }\mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d}{Windows\_D}}}
+\DoxyCodeLine{46         \{}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \textcolor{keyword}{public}:}
+\DoxyCodeLine{49             }
+\DoxyCodeLine{62                 std::vector<std::wstring> \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a858824aabc7b8b754be7260127c46bc2}{getList}}(std::wstring separator = L\textcolor{stringliteral}{"{},"{}});}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{75                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a02beb9b1bc1be66e232be60415f0c2cd}{printList}}(\textcolor{keywordtype}{bool} numerated=\textcolor{keyword}{false}); }
+\DoxyCodeLine{76 }
+\DoxyCodeLine{91                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a01e16130d0337abc26005e96409fb25e}{isOpen}}(std::wstring tWindow); }
+\DoxyCodeLine{92         \};     }
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94 \}}
+
+\end{DoxyCode}

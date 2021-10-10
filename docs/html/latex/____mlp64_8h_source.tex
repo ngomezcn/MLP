@@ -1,0 +1,71 @@
+\hypertarget{____mlp64_8h_source}{}\doxysection{\+\_\+\+\_\+mlp64.\+h}
+\label{____mlp64_8h_source}\index{C:/Users/ngomez/source/repos/Sanity/Sanity/include/core/Pointers/\_\_mlp64/\_\_mlp64.h@{C:/Users/ngomez/source/repos/Sanity/Sanity/include/core/Pointers/\_\_mlp64/\_\_mlp64.h}}
+\mbox{\hyperlink{____mlp64_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_context_8h}{core/Context/Context.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifdef \_WIN32}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <Windows.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <TlHelp32.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <tchar.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#ifdef linux}}
+\DoxyCodeLine{15     \textcolor{comment}{// No support}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_m_l_p}{MLP}} \{}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{class }\mbox{\hyperlink{class_m_l_p_1_1____mlp64}{\_\_mlp64}}}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{private}:}
+\DoxyCodeLine{23             std::vector<unsigned int> offsets;}
+\DoxyCodeLine{24             \textcolor{keywordtype}{unsigned} \_\_int64  dataType;}
+\DoxyCodeLine{25             \mbox{\hyperlink{class_m_l_p_1_1_context}{Context}}* context;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keyword}{public}:}
+\DoxyCodeLine{28             \mbox{\hyperlink{class_m_l_p_1_1____mlp64_a3f3fd41900edc28f9a21585e7d372769}{\_\_mlp64}}(}
+\DoxyCodeLine{29                 std::vector<unsigned int> offsets,}
+\DoxyCodeLine{30                 \textcolor{keywordtype}{unsigned} \_\_int64 dataType,}
+\DoxyCodeLine{31                 \mbox{\hyperlink{class_m_l_p_1_1_context}{Context}}* context}
+\DoxyCodeLine{32                 );}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{keyword}{private}:}
+\DoxyCodeLine{36             \textcolor{keywordtype}{unsigned} \_\_int64 obtain\_dynamic\_address();      }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38             \textcolor{keywordtype}{void} base\_address\_of\_module(}
+\DoxyCodeLine{39                 TCHAR* lpszModuleName}
+\DoxyCodeLine{40                 );}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         \textcolor{keyword}{public}:}
+\DoxyCodeLine{43             \textcolor{comment}{// gets as parameter the address size in bytes}}
+\DoxyCodeLine{44             \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_l_p_1_1____mlp64_a874166887223b7ae5db270bcf2bf3cf8}{get\_as}}(}
+\DoxyCodeLine{45                 \textcolor{keywordtype}{unsigned} \_\_int64 size\_bytes}
+\DoxyCodeLine{46                 );}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{/*namespace datatype \{}}
+\DoxyCodeLine{52 \textcolor{comment}{}}
+\DoxyCodeLine{53 \textcolor{comment}{        // byte size used by default for an integer}}
+\DoxyCodeLine{54 \textcolor{comment}{        int Int = sizeof(int); }}
+\DoxyCodeLine{55 \textcolor{comment}{        int Int4 = 4;}}
+\DoxyCodeLine{56 \textcolor{comment}{        int Int8 = 8;}}
+\DoxyCodeLine{57 \textcolor{comment}{}}
+\DoxyCodeLine{58 \textcolor{comment}{        // byte size used by default a float}}
+\DoxyCodeLine{59 \textcolor{comment}{        int Float = sizeof(float);  }}
+\DoxyCodeLine{60 \textcolor{comment}{        }}
+\DoxyCodeLine{61 \textcolor{comment}{        // byte size used by default for a double}}
+\DoxyCodeLine{62 \textcolor{comment}{        int Double = sizeof(double);  }}
+\DoxyCodeLine{63 \textcolor{comment}{    \}*/}}
+\DoxyCodeLine{64 \}}
+\DoxyCodeLine{65 }
+
+\end{DoxyCode}

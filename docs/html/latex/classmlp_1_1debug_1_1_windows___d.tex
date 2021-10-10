@@ -1,0 +1,126 @@
+\hypertarget{classmlp_1_1debug_1_1_windows___d}{}\doxysection{mlp\+::debug\+::Windows\+\_\+D Class Reference}
+\label{classmlp_1_1debug_1_1_windows___d}\index{mlp::debug::Windows\_D@{mlp::debug::Windows\_D}}
+
+
+Library for debugging open operating system windows.  
+
+
+
+
+{\ttfamily \#include $<$Windows\+\_\+\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::wstring $>$ \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a858824aabc7b8b754be7260127c46bc2}{get\+List}} (std\+::wstring separator=L\char`\"{},\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns a list containing all open windows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a02beb9b1bc1be66e232be60415f0c2cd}{print\+List}} (bool numerated=false)
+\begin{DoxyCompactList}\small\item\em Print all open windows. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a01e16130d0337abc26005e96409fb25e}{is\+Open}} (std\+::wstring t\+Window)
+\begin{DoxyCompactList}\small\item\em Check is windows is opened. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Library for debugging open operating system windows. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Initialization example}}
+\DoxyCodeLine{MLP::debug::Windows\_D wDebug();}
+
+\end{DoxyCode}
+
+
+\begin{DoxyWarning}{Warning}
+Only Windows 7 and above supported 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmlp_1_1debug_1_1_windows___d_a858824aabc7b8b754be7260127c46bc2}\label{classmlp_1_1debug_1_1_windows___d_a858824aabc7b8b754be7260127c46bc2}} 
+\index{mlp::debug::Windows\_D@{mlp::debug::Windows\_D}!getList@{getList}}
+\index{getList@{getList}!mlp::debug::Windows\_D@{mlp::debug::Windows\_D}}
+\doxysubsubsection{\texorpdfstring{getList()}{getList()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::wstring $>$ mlp\+::debug\+::\+Windows\+\_\+\+D\+::get\+List (\begin{DoxyParamCaption}\item[{std\+::wstring}]{separator = {\ttfamily L\char`\"{},\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Returns a list containing all open windows. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// usage example}}
+\DoxyCodeLine{MLP::debug::Windows\_D wDebug();}
+\DoxyCodeLine{wDebug.getList(L\textcolor{stringliteral}{"{}\(\backslash\)n"{}});                   * }
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & Optional parameter to determine if you want to add some character at the end of each element, by default it is (L \char`\"{},\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::wstring$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmlp_1_1debug_1_1_windows___d_a01e16130d0337abc26005e96409fb25e}\label{classmlp_1_1debug_1_1_windows___d_a01e16130d0337abc26005e96409fb25e}} 
+\index{mlp::debug::Windows\_D@{mlp::debug::Windows\_D}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!mlp::debug::Windows\_D@{mlp::debug::Windows\_D}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool mlp\+::debug\+::\+Windows\+\_\+\+D\+::is\+Open (\begin{DoxyParamCaption}\item[{std\+::wstring}]{t\+Window }\end{DoxyParamCaption})}
+
+
+
+Check is windows is opened. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// usage example}}
+\DoxyCodeLine{MLP::debug::Windows\_D wDebug();}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} \mbox{\hyperlink{classmlp_1_1debug_1_1_windows___d_a01e16130d0337abc26005e96409fb25e}{isOpen}} wDebug.isOpen(L\textcolor{stringliteral}{"{}Spotify"{}});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & Get the name of the window to check as a parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The name must be the same to the window to search. (character by character) 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmlp_1_1debug_1_1_windows___d_a02beb9b1bc1be66e232be60415f0c2cd}\label{classmlp_1_1debug_1_1_windows___d_a02beb9b1bc1be66e232be60415f0c2cd}} 
+\index{mlp::debug::Windows\_D@{mlp::debug::Windows\_D}!printList@{printList}}
+\index{printList@{printList}!mlp::debug::Windows\_D@{mlp::debug::Windows\_D}}
+\doxysubsubsection{\texorpdfstring{printList()}{printList()}}
+{\footnotesize\ttfamily void mlp\+::debug\+::\+Windows\+\_\+\+D\+::print\+List (\begin{DoxyParamCaption}\item[{bool}]{numerated = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Print all open windows. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// usage example}}
+\DoxyCodeLine{MLP::debug::Windows\_D wDebug();}
+\DoxyCodeLine{wDebug.printList(\textcolor{keyword}{true});                   }
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & Optional parameter, true to enumarte windows \mbox{[}0..N\mbox{]}, by default is false \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_windows___d_8h}{Windows\+\_\+\+D.\+h}}\item 
+\mbox{\hyperlink{_windows___d_8cpp}{Windows\+\_\+\+D.\+cpp}}\end{DoxyCompactItemize}
