@@ -4,8 +4,6 @@
 
 <img width="700" src="./resources/resume_mlp.jpg"> 
 
-## Explanation multilevel pointers
-
 [Explanation by @GuidedHacking](https://youtu.be/_W0xdVO8-j4)
 
   
