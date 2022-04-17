@@ -1,7 +1,12 @@
 # MLP-Library
 
+## Explanation multilevel pointers
+<img src="./resources/resume_mlp.jpg"> 
+[Full explanation by @GuidedHacking](https://youtu.be/_W0xdVO8-j4)
+
+
 ## Example of use with Cheat Engine (outdated)
-<br/>
+
 
 1. For example, we have the following offsets:
 - ( [ **X-Plane.exe** + **02662358** ] + **10** + **10** + **0** + **8** + **20** + **18** + **DC** ) -> dynamic address 
@@ -25,7 +30,7 @@ Explanation:
 ``` cpp
 unsigned int flap_offsets = [0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC];
 ```
-<br/>
+
 4.  Create the object that will manage the "connection" with the program var
 ``` cpp
     Addy64 myFlaps(flap_offsets);
