@@ -25,6 +25,7 @@ Explanation:
 ``` cpp
 unsigned int flap_offsets = [0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC];
 ```
+<br/>
 4.  Create the object that will manage the "connection" with the program var
 ``` cpp
     Addy64 myFlaps(flap_offsets);
