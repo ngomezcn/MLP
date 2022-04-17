@@ -1,10 +1,15 @@
 # MLP-Library
 
+## Example multilevel pointer
+<img width="400" src="./resources/resume_mlp4.jpg"> 
+<img width="300" src="./resources/resume_mlp3.jpg"> 
+<img width="700" src="./resources/resume_mlp.jpg"> 
+
 ## Explanation multilevel pointers
-<img src="./resources/resume_mlp.jpg"> 
-[Full explanation by @GuidedHacking](https://youtu.be/_W0xdVO8-j4)
 
+[Explanation by @GuidedHacking](https://youtu.be/_W0xdVO8-j4)
 
+  
 ## Example of use with Cheat Engine (outdated)
 
 
