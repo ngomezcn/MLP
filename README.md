@@ -1,8 +1,7 @@
 # MLP-Library
 
 ## Example multilevel pointer
-<img width="400" src="./resources/resume_mlp4.jpg"> 
-<img width="300" src="./resources/resume_mlp3.jpg"> 
+
 <img width="700" src="./resources/resume_mlp.jpg"> 
 
 ## Explanation multilevel pointers
