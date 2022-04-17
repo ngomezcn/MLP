@@ -7,7 +7,7 @@
 - ( [ **X-Plane.exe** + **02662358** ] + **10** + **10** + **0** + **8** + **20** + **18** + **DC** ) -> dynamic address 
 
 <img src="./resources/example_ce_mlp.jpg"> 
-<br/><br/>
+<br/>
 
 
 2.  First will internally fetch and load the program's base address.
@@ -20,7 +20,7 @@ Explanation:
 **"X-Plane.exe"**: Represents the .exe of the target program (It could also be a dll or not at all, this depends on how the program is made.)
 
 **"X-System"**: It is the name of the process (It is the same name as the process opened by Cheat Engine)
-<br/><br/><br/>
+<br/><br/>
 3. Set the compensation matrix. (must be in hexadecimal)
 ``` cpp
 unsigned int flap_offsets = [0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC];
