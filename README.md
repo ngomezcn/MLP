@@ -24,7 +24,7 @@ getWindowsInfo64("X-Plane.exe", "X-System");
 ```
 Explanation:
 
-**"X-Plane.exe"**: Represents the .exe of the target program (It could also be a dll or not at all, this depends on how the program is made.)
+**"X-Plane.exe"**: Represents the .exe of the target program (It could also be a dll or be empty, this depends on how the program is made)
 
 **"X-System"**: It is the name of the process (It is the same name as the process opened by Cheat Engine)
 <br/><br/>
