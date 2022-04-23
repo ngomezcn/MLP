@@ -1,13 +1,13 @@
 # MLP-Library
 
-## Example multilevel pointer
+## Example of a multilevel pointer
 
 <img width="700" src="./resources/resume_mlp.jpg"> 
 
 [Explanation by @GuidedHacking](https://youtu.be/_W0xdVO8-j4)
 
   
-## Example of use with Cheat Engine (outdated)
+## How to use the lib w/ Cheat Engine (outdated version)
 
 
 1. For example, we have the following offsets:
