@@ -40,7 +40,6 @@ unsigned int flap_offsets = [0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC]
 
 5. Now can get and write data directly to the program variable, 
 ``` cpp
-    std::cout << myFlaps.getFloat() << std::cout; // Get data
-
+    auto flaps = myFlaps.getFloat() // Get data
     myFlaps.setFloat(77.3) // Write data
 ```
