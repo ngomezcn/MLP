@@ -35,11 +35,11 @@ unsigned int flap_offsets = [0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC]
 
 4. Pass the compensation matrix to and instance of the library, this will autoload get the dynamic address.
 ``` cpp
-    Addy64 myFlaps(flap_offsets);
+    Addy64 my_flaps = Addy64(flap_offsets);
 ```
 
 5. Now can get and write data directly to the program variable, 
 ``` cpp
-    auto flaps = myFlaps.getFloat() // Get data
-    myFlaps.setFloat(77.3) // Write data
+    auto flaps = my_flaps.getFloat() // Get data
+    my_flaps.setFloat(77.3) // Write data
 ```
