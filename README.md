@@ -1,5 +1,7 @@
 # MLP
 
+Small C++ lib to do the hard work while working with multilevel pointers.
+
 ## Example of a multilevel pointer
 
 <img width="700" src="./resources/resume_mlp.jpg"> 
